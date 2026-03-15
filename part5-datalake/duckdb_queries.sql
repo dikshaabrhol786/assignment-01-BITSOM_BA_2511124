@@ -9,6 +9,7 @@ ON c.customer_id = o.customer_id
 GROUP BY c.customer_name
 ORDER BY total_orders DESC;
 
+
 -- Q2: Find the top 3 customers by total order value
 
 SELECT 
