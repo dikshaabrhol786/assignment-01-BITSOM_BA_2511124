@@ -57,3 +57,11 @@ db.products.updateOne(
 // OP5: create index on category
 
 db.products.createIndex({ category: 1 });
+
+/*
+Explanation:
+Creating an index on the category field improves query performance when filtering
+products by category. Since many queries (such as retrieving Electronics products)
+use the category field as a filter condition, the index allows MongoDB to quickly
+locate matching documents without scanning the entire collection.
+*/
